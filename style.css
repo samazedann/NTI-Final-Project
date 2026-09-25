@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8fb;
+    color: #333;
+}
+
+
+/* HEADER */
+
+.top {
+
+    background-color: #6d3b52;
+
+    color: white;
+
+    padding: 18px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.logo {
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+
+.account a {
+
+    color: white;
+
+    text-decoration: none;
+}
+
+
+.middle {
+
+    background-color: #f9dbe8;
+
+    padding: 18px 7%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.search-box {
+
+    width: 70%;
+
+    display: flex;
+}
+
+
+.search-box input {
+
+    width: 90%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    outline: none;
+}
+
+
+.search-box button {
+
+    width: 55px;
+
+    border: 1px solid #ccc;
+
+    background-color: white;
+
+    cursor: pointer;
+}
+
+
+.cart {
+
+    font-size: 25px;
+}
+
+
+.cart span {
+
+    background-color: #e75480;
+
+    color: white;
+
+    border-radius: 50%;
+
+    padding: 3px 7px;
+
+    font-size: 14px;
+}
+
+
+/* NAVIGATION */
+
+nav {
+
+    background-color: #6d3b52;
+
+    padding: 12px;
+
+    position: relative;
+}
+
+
+nav ul {
+
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 45px;
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+}
+
+
+nav a:hover {
+
+    color: #ffd1e1;
+}
+
+
+.menu-btn,
+.close-btn {
+
+    display: none;
+}
+
+
+/* MAIN */
+
+.welcome {
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+
+.welcome h1 {
+
+    color: #6d3b52;
+
+    margin-bottom: 10px;
+}
+
+
+.welcome p {
+
+    color: #777;
+}
+
+
+#products {
+
+    padding: 20px 7%;
+}
+
+
+#products h2 {
+
+    text-align: center;
+
+    color: #6d3b52;
+
+    margin-bottom: 25px;
+}
+
+
+/* PRODUCTS */
+
+.products-container {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+
+.card {
+
+    width: 250px;
+
+    background-color: white;
+
+    margin: 15px;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+
+    transition: 0.3s;
+}
+
+
+.card:hover {
+
+    transform: translateY(-5px);
+}
+
+
+.card img {
+
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+}
+
+
+.card-content {
+
+    padding: 15px;
+
+    text-align: center;
+}
+
+
+.card-content h3 {
+
+    color: #6d3b52;
+
+    margin-bottom: 8px;
+}
+
+
+.price {
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+
+.add-btn {
+
+    width: 80%;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background-color: #6d3b52;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+.add-btn:hover {
+
+    background-color: #e75480;
+}
+
+
+.sorry {
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 25px;
+
+    color: #999;
+
+    padding: 40px;
+}
+
+
+/* LOGIN */
+
+.login-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #f9dbe8,
+        #ead2df
+    );
+}
+
+
+.login-box {
+
+    width: 330px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+
+.login-box h1,
+.login-box h2 {
+
+    text-align: center;
+
+    color: #6d3b52;
+
+    margin-bottom: 15px;
+}
+
+
+.login-box label {
+
+    display: block;
+
+    margin-top: 10px;
+}
+
+
+.login-box input {
+
+    width: 100%;
+
+    padding: 11px;
+
+    margin-top: 7px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+}
+
+
+.login-box button {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 11px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background-color: #6d3b52;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+#loginMessage {
+
+    text-align: center;
+
+    margin-top: 15px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .top {
+
+        padding: 15px;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    .middle {
+
+        padding: 15px;
+    }
+
+
+    .search-box {
+
+        width: 90%;
+    }
+
+
+    .menu-btn {
+
+        display: block;
+
+        margin: auto;
+
+        background: none;
+
+        color: white;
+
+        border: 2px solid white;
+
+        padding: 6px 10px;
+
+        font-size: 20px;
+
+        cursor: pointer;
+    }
+
+
+    nav ul {
+
+        display: none;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        position: absolute;
+
+        top: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        background-color: #6d3b52;
+
+        padding: 20px;
+
+        z-index: 10;
+    }
+
+
+    nav ul.show {
+
+        display: flex;
+    }
+
+
+    nav li {
+
+        padding: 12px;
+
+        text-align: center;
+    }
+
+
+    .close-btn {
+
+        display: block;
+
+        margin-left: auto;
+
+        background: none;
+
+        border: none;
+
+        color: white;
+
+        font-size: 20px;
+
+        cursor: pointer;
+    }
+
+
+    .card {
+
+        width: 85%;
+
+        max-width: 300px;
+    }
+
+
+    .card img {
+
+        height: 250px;
+    }
+
+}
